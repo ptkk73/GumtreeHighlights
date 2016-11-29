@@ -7,9 +7,10 @@
 //
 
 import XCTest
+import TestApp_DataDownloader
 @testable import TestApp_DataDownloader
 
-class TestApp_DataDownloaderTests: XCTestCase {
+class CollectionUtilsTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -21,9 +22,14 @@ class TestApp_DataDownloaderTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testTransform() {
+        let intCollection = [1, 24, 5, 67, 890, 0]
+        let strCollection = ["1", "24", "5", "67", "890", "0"]
+        
+        XCTAssert(CollectionUtils.transform(collection: intCollection)
+        {
+            String($0)
+        } == strCollection)
     }
     
     func testPerformanceExample() {

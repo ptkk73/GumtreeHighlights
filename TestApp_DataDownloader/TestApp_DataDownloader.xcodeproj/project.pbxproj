@@ -22,6 +22,8 @@
 		BB49C0D21DE44D73001D8C9E /* ExampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB49C0D11DE44D73001D8C9E /* ExampleTableViewController.swift */; };
 		BB49C0D51DE461F1001D8C9E /* GumtreeHighlightModelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB49C0D41DE461F1001D8C9E /* GumtreeHighlightModelExtension.swift */; };
 		BB49C0D71DE4885D001D8C9E /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB49C0D61DE4885D001D8C9E /* StringExtensions.swift */; };
+		BB53B74A1DEDA99B004ADBDC /* FilterFlyoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB53B7491DEDA99B004ADBDC /* FilterFlyoutViewController.swift */; };
+		BB63C17A1DEC77410091698A /* CollectionUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB63C1791DEC77410091698A /* CollectionUtils.swift */; };
 		BB6BFF301DDDD6380089E336 /* PassedTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6BFF2F1DDDD6380089E336 /* PassedTextViewController.swift */; };
 		BBA7A3B81DE5AD96005F1377 /* CellSelectableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA7A3B71DE5AD96005F1377 /* CellSelectableTextView.swift */; };
 		BBA7A3BA1DE5B8A6005F1377 /* IHTMLDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA7A3B91DE5B8A6005F1377 /* IHTMLDownloader.swift */; };
@@ -76,6 +78,8 @@
 		BB49C0D11DE44D73001D8C9E /* ExampleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewController.swift; sourceTree = "<group>"; };
 		BB49C0D41DE461F1001D8C9E /* GumtreeHighlightModelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GumtreeHighlightModelExtension.swift; sourceTree = "<group>"; };
 		BB49C0D61DE4885D001D8C9E /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		BB53B7491DEDA99B004ADBDC /* FilterFlyoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterFlyoutViewController.swift; sourceTree = "<group>"; };
+		BB63C1791DEC77410091698A /* CollectionUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionUtils.swift; sourceTree = "<group>"; };
 		BB6BFF2F1DDDD6380089E336 /* PassedTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassedTextViewController.swift; sourceTree = "<group>"; };
 		BBA7A3B71DE5AD96005F1377 /* CellSelectableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellSelectableTextView.swift; sourceTree = "<group>"; };
 		BBA7A3B91DE5B8A6005F1377 /* IHTMLDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHTMLDownloader.swift; sourceTree = "<group>"; };
@@ -188,6 +192,7 @@
 			children = (
 				BB293DBB1DDEFE9200FEA021 /* StringUtility.swift */,
 				BB293DBD1DDF011100FEA021 /* HttpDownloader.swift */,
+				BB63C1791DEC77410091698A /* CollectionUtils.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 				BBA7A3B71DE5AD96005F1377 /* CellSelectableTextView.swift */,
 				BBA7A3C11DE5C95F005F1377 /* HighlightImagePreviewController.swift */,
 				BBB972E11DE5EB88003CD8F4 /* SinglePhotoFullScreenViewController.swift */,
+				BB53B7491DEDA99B004ADBDC /* FilterFlyoutViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -432,6 +438,7 @@
 				BB49C0D51DE461F1001D8C9E /* GumtreeHighlightModelExtension.swift in Sources */,
 				BB293DC51DDF0F9100FEA021 /* GumtreeHighlightModel.swift in Sources */,
 				BB293DC31DDF091F00FEA021 /* GumtreeProcessorEngine.swift in Sources */,
+				BB63C17A1DEC77410091698A /* CollectionUtils.swift in Sources */,
 				BB23BFAE1DDC88C700827827 /* ViewController.swift in Sources */,
 				BB6BFF301DDDD6380089E336 /* PassedTextViewController.swift in Sources */,
 				BB23BFAC1DDC88C700827827 /* AppDelegate.swift in Sources */,
@@ -443,6 +450,7 @@
 				BBA7A3BA1DE5B8A6005F1377 /* IHTMLDownloader.swift in Sources */,
 				BB293DBC1DDEFE9200FEA021 /* StringUtility.swift in Sources */,
 				BB49C0D21DE44D73001D8C9E /* ExampleTableViewController.swift in Sources */,
+				BB53B74A1DEDA99B004ADBDC /* FilterFlyoutViewController.swift in Sources */,
 				BBB34D5A1DE721A7003D6E09 /* GumtreeURLBuilder.swift in Sources */,
 				BB293DBE1DDF011100FEA021 /* HttpDownloader.swift in Sources */,
 				BB293DB91DDEF30100FEA021 /* MainViewController.swift in Sources */,

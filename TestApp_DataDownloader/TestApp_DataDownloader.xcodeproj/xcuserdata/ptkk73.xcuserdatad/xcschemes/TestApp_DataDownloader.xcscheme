@@ -38,16 +38,6 @@
                ReferencedContainer = "container:TestApp_DataDownloader.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BB23BFC61DDC88C700827827"
-               BuildableName = "TestApp_DataDownloaderUITests.xctest"
-               BlueprintName = "TestApp_DataDownloaderUITests"
-               ReferencedContainer = "container:TestApp_DataDownloader.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

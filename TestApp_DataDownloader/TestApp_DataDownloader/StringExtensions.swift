@@ -18,5 +18,6 @@ extension String
         .replacingOccurrences(of: "&#61;", with: "=", options: .literal)
         .replacingOccurrences(of: "&gt;", with: ">", options: .literal)
         .replacingOccurrences(of: "&lt;", with: "<", options: .literal)
+        .replacingOccurrences(of: "&amp;", with: "&", options: .literal)
     }
 }

@@ -19,10 +19,20 @@ class GumtreeURLBuilder
         var url = GumtreeConfig.GUMTREE_URL + "/"
         + categoryPart + "/"
         + cityPart + "/"
+            + buildSearchPhrase(text: filterData.text ?? "")
         + someWeirdStringPart
         
         url += "?pr=\(filterData.priceFrom ?? ""),\(filterData.priceTo ?? "")"
         
         return url
+    }
+    
+    static func buildSearchPhrase(text: String) -> String
+    {
+        if text.characters.count > 0, let escapedWhitespace = StringUtility.replaceRegex(pattern: "\\s", replaceString: "+", text: text)
+        {
+            return escapedWhitespace + "/"
+        }
+        return ""
     }
 }

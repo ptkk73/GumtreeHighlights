@@ -10,7 +10,7 @@ import UIKit
 
 class MainViewController : UIViewController
 {
-    let filterModel = GumtreeFilterData()
+    var filterModel = GumtreeFilterData()
     
     var downloadURL: String = ""
     
@@ -22,15 +22,47 @@ class MainViewController : UIViewController
     
     @IBOutlet weak var edtMinPrice: UITextField!
     @IBOutlet weak var edtMaxPrice: UITextField!
+    @IBOutlet weak var edtPhrase: UITextField!
+    
+    private func loadFilterData()
+    {
+        if let filterDataArray = GumtreeFilterData.loadData()
+        {
+            if filterDataArray.count > 0
+            {
+                filterModel = filterDataArray.first!
+                setupWithDataFromStorage()
+            }
+        }
+    }
     
     override func viewDidLoad() {
+        
+        
+        
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        loadFilterData()
         updateURL()
         
         edtMinPrice.addTarget(self, action: #selector(textChanged), for: UIControlEvents.editingChanged)
         edtMaxPrice.addTarget(self, action: #selector(textChanged), for: UIControlEvents.editingChanged)
+        edtPhrase.addTarget(self, action: #selector(textChanged), for: UIControlEvents.editingChanged)
         
         progressDownload.stopAnimating()
         progressDownload.isHidden = true;
+        
+    }
+    
+    func setupWithDataFromStorage()
+    {
+        edtMinPrice.text = filterModel.priceFrom
+        edtMaxPrice.text = filterModel.priceTo
+        edtPhrase.text = filterModel.text
     }
     
     func textChanged()
@@ -68,6 +100,7 @@ class MainViewController : UIViewController
         progressDownload.isHidden = false;
         btnDownloadData.isEnabled = false;
         
+        GumtreeFilterData.saveData(filters: [filterModel])
     }
     
     
@@ -86,6 +119,7 @@ class MainViewController : UIViewController
     {
         filterModel.priceFrom = edtMinPrice.text
         filterModel.priceTo = edtMaxPrice.text
+        filterModel.text = edtPhrase.text
         downloadURL = GumtreeURLBuilder.build(filterData: filterModel)
         lblBuiltURL.text = downloadURL
     }

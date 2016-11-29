@@ -21,7 +21,7 @@ class HighlightImagePreviewController : UIPageViewController
         
         photoViews = []
         var index = 0
-        for item in imgUrlArray
+        for _ in imgUrlArray
         {
             photoViews.append(self.newPhotoViewController(imageURLs: imgUrlArray, index: index))
             index += 1

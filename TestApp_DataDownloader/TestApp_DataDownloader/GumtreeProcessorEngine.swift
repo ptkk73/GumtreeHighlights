@@ -9,9 +9,7 @@
 import Foundation
 
 class GumtreeHighlightProcessorEngine
-{
-
-    
+{   
     var rawContent: String
     var gumtreeHighlights : [GumtreeHighlightModel] = []
     
