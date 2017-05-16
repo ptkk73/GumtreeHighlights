@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB050AD71DF0682F00E115A1 /* GumtreeOferDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB050AD61DF0682F00E115A1 /* GumtreeOferDetailsViewController.swift */; };
 		BB23BFAC1DDC88C700827827 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB23BFAB1DDC88C700827827 /* AppDelegate.swift */; };
 		BB23BFAE1DDC88C700827827 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB23BFAD1DDC88C700827827 /* ViewController.swift */; };
 		BB23BFB11DDC88C700827827 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB23BFAF1DDC88C700827827 /* Main.storyboard */; };
@@ -22,9 +23,12 @@
 		BB49C0D21DE44D73001D8C9E /* ExampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB49C0D11DE44D73001D8C9E /* ExampleTableViewController.swift */; };
 		BB49C0D51DE461F1001D8C9E /* GumtreeHighlightModelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB49C0D41DE461F1001D8C9E /* GumtreeHighlightModelExtension.swift */; };
 		BB49C0D71DE4885D001D8C9E /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB49C0D61DE4885D001D8C9E /* StringExtensions.swift */; };
+		BB52652C1DEEDE4300888850 /* OfferDetailsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB52652B1DEEDE4300888850 /* OfferDetailsPageViewController.swift */; };
+		BB52652E1DEF064200888850 /* OfferDetailGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB52652D1DEF064200888850 /* OfferDetailGalleryViewController.swift */; };
 		BB53B74A1DEDA99B004ADBDC /* FilterFlyoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB53B7491DEDA99B004ADBDC /* FilterFlyoutViewController.swift */; };
 		BB63C17A1DEC77410091698A /* CollectionUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB63C1791DEC77410091698A /* CollectionUtils.swift */; };
 		BB6BFF301DDDD6380089E336 /* PassedTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6BFF2F1DDDD6380089E336 /* PassedTextViewController.swift */; };
+		BB8DD0E61E03F49100406B9B /* MyCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB8DD0E51E03F49100406B9B /* MyCustomView.xib */; };
 		BBA7A3B81DE5AD96005F1377 /* CellSelectableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA7A3B71DE5AD96005F1377 /* CellSelectableTextView.swift */; };
 		BBA7A3BA1DE5B8A6005F1377 /* IHTMLDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA7A3B91DE5B8A6005F1377 /* IHTMLDownloader.swift */; };
 		BBA7A3BC1DE5C0ED005F1377 /* GumtreeOfferProcessorEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA7A3BB1DE5C0ED005F1377 /* GumtreeOfferProcessorEngine.swift */; };
@@ -57,6 +61,7 @@
 /* Begin PBXFileReference section */
 		0067128FF58AC0D53F5B76E7 /* Pods-TestApp_DataDownloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestApp_DataDownloader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestApp_DataDownloader/Pods-TestApp_DataDownloader.debug.xcconfig"; sourceTree = "<group>"; };
 		8AA132B4B0F3EBE08F84CBD0 /* Pods-TestApp_DataDownloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestApp_DataDownloader.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestApp_DataDownloader/Pods-TestApp_DataDownloader.release.xcconfig"; sourceTree = "<group>"; };
+		BB050AD61DF0682F00E115A1 /* GumtreeOferDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GumtreeOferDetailsViewController.swift; sourceTree = "<group>"; };
 		BB23BFA81DDC88C700827827 /* TestApp_DataDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp_DataDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB23BFAB1DDC88C700827827 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB23BFAD1DDC88C700827827 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,9 +83,12 @@
 		BB49C0D11DE44D73001D8C9E /* ExampleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewController.swift; sourceTree = "<group>"; };
 		BB49C0D41DE461F1001D8C9E /* GumtreeHighlightModelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GumtreeHighlightModelExtension.swift; sourceTree = "<group>"; };
 		BB49C0D61DE4885D001D8C9E /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		BB52652B1DEEDE4300888850 /* OfferDetailsPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferDetailsPageViewController.swift; sourceTree = "<group>"; };
+		BB52652D1DEF064200888850 /* OfferDetailGalleryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferDetailGalleryViewController.swift; sourceTree = "<group>"; };
 		BB53B7491DEDA99B004ADBDC /* FilterFlyoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterFlyoutViewController.swift; sourceTree = "<group>"; };
 		BB63C1791DEC77410091698A /* CollectionUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionUtils.swift; sourceTree = "<group>"; };
 		BB6BFF2F1DDDD6380089E336 /* PassedTextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassedTextViewController.swift; sourceTree = "<group>"; };
+		BB8DD0E51E03F49100406B9B /* MyCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCustomView.xib; sourceTree = "<group>"; };
 		BBA7A3B71DE5AD96005F1377 /* CellSelectableTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellSelectableTextView.swift; sourceTree = "<group>"; };
 		BBA7A3B91DE5B8A6005F1377 /* IHTMLDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IHTMLDownloader.swift; sourceTree = "<group>"; };
 		BBA7A3BB1DE5C0ED005F1377 /* GumtreeOfferProcessorEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GumtreeOfferProcessorEngine.swift; sourceTree = "<group>"; };
@@ -152,6 +160,7 @@
 		BB23BFAA1DDC88C700827827 /* TestApp_DataDownloader */ = {
 			isa = PBXGroup;
 			children = (
+				BB8DD0E41E03F48400406B9B /* Views */,
 				BB49C0D31DE461D2001D8C9E /* Extensions */,
 				BB293DC11DDF08B700FEA021 /* Model */,
 				BB293DC01DDF08AD00FEA021 /* ViewController */,
@@ -217,6 +226,9 @@
 				BBA7A3C11DE5C95F005F1377 /* HighlightImagePreviewController.swift */,
 				BBB972E11DE5EB88003CD8F4 /* SinglePhotoFullScreenViewController.swift */,
 				BB53B7491DEDA99B004ADBDC /* FilterFlyoutViewController.swift */,
+				BB52652B1DEEDE4300888850 /* OfferDetailsPageViewController.swift */,
+				BB52652D1DEF064200888850 /* OfferDetailGalleryViewController.swift */,
+				BB050AD61DF0682F00E115A1 /* GumtreeOferDetailsViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -238,6 +250,14 @@
 				BB49C0D61DE4885D001D8C9E /* StringExtensions.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		BB8DD0E41E03F48400406B9B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB8DD0E51E03F49100406B9B /* MyCustomView.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		D890C939A777FF0EBE50F78A /* Pods */ = {
@@ -360,6 +380,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB23BFB61DDC88C700827827 /* LaunchScreen.storyboard in Resources */,
+				BB8DD0E61E03F49100406B9B /* MyCustomView.xib in Resources */,
 				BB23BFB31DDC88C700827827 /* Assets.xcassets in Resources */,
 				BB23BFB11DDC88C700827827 /* Main.storyboard in Resources */,
 			);
@@ -439,11 +460,14 @@
 				BB293DC51DDF0F9100FEA021 /* GumtreeHighlightModel.swift in Sources */,
 				BB293DC31DDF091F00FEA021 /* GumtreeProcessorEngine.swift in Sources */,
 				BB63C17A1DEC77410091698A /* CollectionUtils.swift in Sources */,
+				BB52652E1DEF064200888850 /* OfferDetailGalleryViewController.swift in Sources */,
 				BB23BFAE1DDC88C700827827 /* ViewController.swift in Sources */,
 				BB6BFF301DDDD6380089E336 /* PassedTextViewController.swift in Sources */,
+				BB52652C1DEEDE4300888850 /* OfferDetailsPageViewController.swift in Sources */,
 				BB23BFAC1DDC88C700827827 /* AppDelegate.swift in Sources */,
 				BBB34D5C1DE721C9003D6E09 /* GumtreeFilterData.swift in Sources */,
 				BB49C0D71DE4885D001D8C9E /* StringExtensions.swift in Sources */,
+				BB050AD71DF0682F00E115A1 /* GumtreeOferDetailsViewController.swift in Sources */,
 				BBA7A3BC1DE5C0ED005F1377 /* GumtreeOfferProcessorEngine.swift in Sources */,
 				BBA7A3C21DE5C95F005F1377 /* HighlightImagePreviewController.swift in Sources */,
 				BBB972E21DE5EB88003CD8F4 /* SinglePhotoFullScreenViewController.swift in Sources */,

@@ -186,11 +186,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TestApp_DataDownloader/ExampleTableViewController.swift"
-            timestampString = "502122461.757683"
+            timestampString = "502208157.077191"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "266"
-            endingLineNumber = "266"
+            startingLineNumber = "279"
+            endingLineNumber = "279"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -202,11 +202,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TestApp_DataDownloader/ExampleTableViewController.swift"
-            timestampString = "502122461.757683"
+            timestampString = "502208157.077191"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "233"
-            endingLineNumber = "233"
+            startingLineNumber = "246"
+            endingLineNumber = "246"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -218,11 +218,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TestApp_DataDownloader/ExampleTableViewController.swift"
-            timestampString = "502122461.757683"
+            timestampString = "502208157.077191"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "228"
-            endingLineNumber = "228"
+            startingLineNumber = "241"
+            endingLineNumber = "241"
             landmarkName = "numberOfSections(in:)"
             landmarkType = "7">
          </BreakpointContent>

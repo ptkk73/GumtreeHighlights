@@ -40,6 +40,14 @@ class MainViewController : UIViewController
         
         
         
+//        let bundle = Bundle(for: type(of: self))
+//        let nib = UINib(nibName: "MyCustomView", bundle: bundle)
+//        let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
+//        view.frame = self.view.bounds
+//        view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+//        progressDownload.addSubview(view)
+
+        
         
     }
     

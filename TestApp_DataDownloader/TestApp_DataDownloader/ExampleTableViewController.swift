@@ -59,17 +59,17 @@ class ExampleTableViewController: UITableViewController, IHTMLDownloader{
                     {
                         let gumtreeOffer = GumtreeOfferProcessorEngine(htmlContent: result, url: url)
                         DispatchQueue.main.sync
+                        {
+                            if instance.detailModels.count > index
                             {
-                                if instance.detailModels.count > index
+                                // MIGHT BE A RACE CONDITION HERE
+                                instance.detailModels[index] = gumtreeOffer.offerModel
+                                if let cell = instance.tableView.cellForRow(at: IndexPath.init(row: index, section: 0)) as? ExampleCell
                                 {
-                                    // MIGHT BE A RACE CONDITION HERE
-                                    instance.detailModels[index] = gumtreeOffer.offerModel
-                                    if let cell = instance.tableView.cellForRow(at: IndexPath.init(row: index, section: 0)) as? ExampleCell
-                                    {
-                                        cell.lblEstimatedPrice.text = gumtreeOffer.offerModel.estimatedPriceString
-                                        cell.progressEstimatedPrice.stopAnimating()
-                                    }
+                                    cell.lblEstimatedPrice.text = gumtreeOffer.offerModel.estimatedPriceString
+                                    cell.progressEstimatedPrice.stopAnimating()
                                 }
+                            }
                         }
                     }
                 }
@@ -199,6 +199,17 @@ class ExampleTableViewController: UITableViewController, IHTMLDownloader{
         super.didReceiveMemoryWarning()
     }
     
+    
+    func navigateToDetailsPage(rowIndex: Int)
+    {
+        if let offerDetailsViewController = storyboard?.instantiateViewController(withIdentifier: "OfferDetailsViewController") as? OfferDetailsPageViewController
+        {
+            offerDetailsViewController.highlightModel = highlightModels[rowIndex]
+            offerDetailsViewController.detailsModel = detailModels[rowIndex]
+            navigationController?.pushViewController(offerDetailsViewController, animated: true)
+        }
+    }
+    
     func navigateToWebsite(url: URL)
     {
         UIApplication.shared.open(url, options: [:])
@@ -213,11 +224,13 @@ class ExampleTableViewController: UITableViewController, IHTMLDownloader{
     
     func onClicked(row: Int)
     {
-        let currentModel = highlightModels[row]
-        if let _ = currentModel.articleURL, let url = URL(string: currentModel.articleURL!)
-        {
-            navigateToWebsite(url: url)
-        }
+        navigateToDetailsPage(rowIndex: row)
+//        let currentModel = highlightModels[row]
+//        if let _ = currentModel.articleURL, let url = URL(string: currentModel.articleURL!)
+//        {
+//            navigateToWebsite(url: url)
+//            
+//        }
     }
     
 
